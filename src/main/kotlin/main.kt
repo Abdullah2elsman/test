@@ -1,8 +1,17 @@
 // this is main function
 fun main() {
-    var car = "BMW"
-    var number = 25
+    val message = """
+        Hello,
+        My Name is Mohammed.
+        How are you?
+    """.trimIndent()
+val message2 = """
+        Hello,
+        My Name is Ahmed.
+        How are you?
+    """.replaceIndent("- ")
 
-    println(car::class)
-    println(number::class)
+    println(message)
+    print("==========================")
+    println(message2)
 }
