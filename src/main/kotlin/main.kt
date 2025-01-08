@@ -14,4 +14,13 @@ val message2 = """
     println(message)
     println("==========================")
     println(message2)
+
+
+    val name = "Tamer"
+    val age = 25
+
+    println("Hello $name Your age is $age")
+    println("Hello $name your age is $age and your name is has ${name.length} Characters long")
+
+    println(name.length)
 }
