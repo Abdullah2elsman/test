@@ -1,6 +1,11 @@
-// this is main function
 fun main() {
-    print("hello")
-    println("hello world")
-    print("hello")
+    var firstName = "Abdullah"
+    println(firstName)
+
+    var car = "BMW"
+
+    var number = 25
+
+    println(car::class)
+    println(number::class)
 }
