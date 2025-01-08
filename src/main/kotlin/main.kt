@@ -12,6 +12,6 @@ val message2 = """
     """.replaceIndent("- ")
 
     println(message)
-    print("==========================")
+    println("==========================")
     println(message2)
 }
