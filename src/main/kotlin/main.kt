@@ -1,11 +1,18 @@
 // this is main function
 fun main() {
-    var isBlank:Boolean = false
-    println(isBlank)
+    val number1 = 12.5
+    val number2 = 3.5
+    val result:Double
 
-    println(isBlank.not())
+    result = number1 + number2
 
-    isBlank = "".isBlank()
+    println("Addition: $result")
 
-    println(isBlank)
+    val firstName = "Mohamed"
+    val lastName = "Tamer"
+    val job = "Developer"
+
+    val stringResult = "$firstName $lastName $job"
+
+    println(stringResult)
 }
