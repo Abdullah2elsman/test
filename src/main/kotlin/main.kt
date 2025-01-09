@@ -1,12 +1,15 @@
 // this is main function
 fun main()
 {
-    val values = listOf("Kotlin", "Java", "Js", "HTML")
-
-    for (i in values){
-        println(i)
+    val age:Any = 1.0
+    val obj:Any = Person("Tamer")
+    if (obj is String) {
+        println("It Is!")
+        println(obj.javaClass.name)
+    } else {
+        println("It is Not!")
+        println(obj.javaClass.name)
     }
 
-    println ("=====================")
-    values.forEach {println(it)}
 }
+    class Person(name:String)
