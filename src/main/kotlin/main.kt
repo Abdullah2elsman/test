@@ -1,15 +1,14 @@
-// this is main function
-fun main()
-{
-    val age:Any = 1.0
-    val obj:Any = Person("Tamer")
-    if (obj is String) {
-        println("It Is!")
-        println(obj.javaClass.name)
-    } else {
-        println("It is Not!")
-        println(obj.javaClass.name)
-    }
-
+fun main(){
+    val obj:Any = getStuff("3")
+    val test = obj as? String
+    println(test)
 }
-    class Person(name:String)
+fun getStuff(value:String):Any {
+    return when(value){
+        "1" -> 99
+        "2" -> "Hello"
+        "3" -> true
+        "4" -> 16.1
+        else -> false
+    }
+}
