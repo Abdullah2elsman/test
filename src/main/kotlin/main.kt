@@ -1,14 +1,24 @@
+import kotlin.Exception
+import kotlin.IllegalArgumentException
+import kotlin.IllegalStateException
+
 fun main(){
-    val obj:Any = getStuff("3")
-    val test = obj as? String
-    println(test)
+    val user = UserInfo("Tamer",9)
+
+    try
+    {
+        checkAge(user)
+        println("Done")
+    } catch (ex:IllegalArgumentException){
+        println("Catch The Exception")
+    }
+
+    println("hello")
 }
-fun getStuff(value:String):Any {
-    return when(value){
-        "1" -> 99
-        "2" -> "Hello"
-        "3" -> true
-        "4" -> 16.1
-        else -> false
+
+private fun checkAge(p:UserInfo){
+    if(p.age < 18){
+        throw IllegalArgumentException  ("Error")
     }
 }
+data class UserInfo(val name:String, val age:Int)
